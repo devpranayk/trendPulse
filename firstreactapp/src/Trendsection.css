@@ -1,0 +1,69 @@
+*{
+  font-family: "jura";
+}
+.trendsec {
+  padding: 20px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.articleCard {
+  background-color: #f8f8f8;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.articleImage {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.articleCard h3 {
+  font-size: 16px;
+  margin: 12px 0 8px;
+  flex-grow: 0;
+}
+
+.articleCard p {
+  font-size: 14px;
+  flex-grow: 1;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.openBtn {
+  align-self: center;
+  padding: 8px 14px;
+  background-color: #1d2145;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+/* Dark Mode Cards */
+.app-layout.dark .articleCard {
+  background-color: #1e1e1e;
+  color: #ddd;
+}
+
+.app-layout.dark .openBtn {
+  background-color: #3a3aff;
+}
+
+.app-layout.dark .articleCard p {
+  color: #bbb;
+}
