@@ -1,9 +1,9 @@
-/* ========== GLOBAL TRANSITIONS ========== */
+
 * {
   transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
 }
 
-/* ========== LAYOUT ========== */
+
 .app-layout {
   display: flex;
   min-height: 100vh;
@@ -11,12 +11,17 @@
   background: linear-gradient(to bottom right, #fdfcfb, #e2d1c3);
 }
 
+
+
+
 .app-layout.dark {
   background: linear-gradient(to bottom right, #0f0f0f, #1c1c2e);
   color: #e2e2e2;
 }
 
-/* ========== SIDEBAR ========== */
+
+
+
 .sidebar {
   position: fixed;
   left: -240px;
@@ -31,15 +36,21 @@
   font-family: "jura";
 }
 
+
+
 .sidebar.open {
   left: 0;
 }
+
+
 
 .sidebar label {
   display: block;
   margin-top: 15px;
   font-weight: bold;
 }
+
+
 
 .sidebar select,
 .sidebar input[type="date"] {
@@ -51,10 +62,14 @@
   border: 1px solid #ccc;
 }
 
+
+
 .app-layout.dark .sidebar {
   background: linear-gradient(to bottom, #1a1a1a, #2c2c3a);
   color: white;
 }
+
+
 
 .app-layout.dark .sidebar select,
 .app-layout.dark .sidebar input {
@@ -63,14 +78,21 @@
   border: 1px solid #444;
 }
 
-/* ========== MAIN SECTION ========== */
+
+
+
+
+
 .main-section {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
 
-/* ========== NAVBAR ========== */
+
+
+
+
 .navbar {
   background: linear-gradient(to right, #ffc2b4, #ACE3F8);
   padding: 20px 40px;
@@ -81,9 +103,12 @@
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+
+
 .app-layout.dark .navbar {
   background: linear-gradient(to right, #111827, #1e1e2f);
 }
+
 
 .logo {
   font-size: 24px;
@@ -91,16 +116,22 @@
   color:#1a1a2e;
   font-family: "jura";
 }
+
 .logoP{
   color:#1a1a2e;
   font-family: "jura";
 }
+
 .app-layout.dark .logo{
   color:#fff;
 }
+
+
 .app-layout.dark .logoP{
   color:#fff;
 }
+
+
 
 .search-input {
   padding: 10px 16px;
@@ -110,12 +141,13 @@
   font-size: 14px;
 }
 
+
 .app-layout.dark .search-input {
   background-color: #2c2c2c;
   color: white;
 }
 
-/* ========== DARK MODE RIPPLE ANIMATION ========== */
+
 .mode-wave {
   position: fixed;
   width: 1px;
@@ -127,6 +159,7 @@
   pointer-events: none;
   opacity: 0.3;
 }
+
 
 .app-layout.dark .mode-wave {
   background-color: white;
@@ -148,7 +181,11 @@
   }
 }
 
-/* ========== DARK MODE TOGGLE SWITCH ========== */
+
+
+
+
+
 .dark-toggle-switch {
   width: 60px;
   height: 32px;
@@ -160,6 +197,7 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
 
 .slider {
   background-color: white;
@@ -173,25 +211,35 @@
   font-size: 16px;
 }
 
+
+
 .slider.dark {
   transform: translateX(28px);
   background-color: #1d2145;
 }
 
+
+
 .app-layout.dark .dark-toggle-switch {
   background-color: #444;
 }
+
+
+
 
 .dark-toggle-switch:hover {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
-/* ========== HAMBURGER ========== */
+
+
 .navbar-left {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
+
 
 .hamburger {
   font-size: 22px;
@@ -206,7 +254,9 @@
   color:#fff;
 }
 
-/* ========== CLOSE BUTTON FOR SIDEBAR ========== */
+
+
+
 .close-btn {
   display: block;
   background: none;
@@ -218,11 +268,14 @@
   cursor: pointer;
 }
 
+
+
 .app-layout.dark .close-btn {
   color: #ddd;
 }
 
-/* ========== RESPONSIVE ========== */
+
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;
