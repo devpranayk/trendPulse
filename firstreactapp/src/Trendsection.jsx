@@ -42,7 +42,7 @@ function Trendsection({ search, sortBy, lang, from, to }) {
       })
       .catch((err) => {
 
-        setError('Failed to fetch news. (Free API limit has Reached, please reset the API key and then try Again)');
+        setError('Failed to fetch news. (Free API limit has been Reached, please reset the API key, then try Again)');
         console.error(err);
 
       })
