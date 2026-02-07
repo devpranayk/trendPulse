@@ -32,6 +32,7 @@ function Trendsection({ search, sortBy, lang, from, to }) {
 
         if (Array.isArray(data.articles) && data.articles.length > 0) {
           setArticles(data.articles);
+
           setError(null);
         } else {
           setArticles([]);
@@ -41,7 +42,7 @@ function Trendsection({ search, sortBy, lang, from, to }) {
       })
       .catch((err) => {
 
-        setError('Failed to fetch news.');
+        setError('Failed to fetch news. (Free API limit has Reached, please reset the API key and then try Again)');
         console.error(err);
 
       })

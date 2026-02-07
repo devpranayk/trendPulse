@@ -50,9 +50,13 @@ app.get("/api/news", async (req, res) => {
 
 
   } catch (error) {
-    console.error("❌ GNews Fetch Error:");
+    console.error(" GNews Fetch Error:");
+
     console.error(error.response?.data || error.message);
-    res.status(500).json({ error: "Unable to fetch news from GNews." });
+
+
+    res.status(500).json({ 
+      error: "Unable to fetch news from GNews. " });
 
   }
 
