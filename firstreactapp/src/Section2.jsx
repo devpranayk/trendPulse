@@ -3,9 +3,14 @@ import {useEffect} from 'react'
 import './Section2.css'
 import Section3 from './Section3'
 
+
+
 function Section2(props){
     console.log(props)
+
+
    return(
+
     <div className="news">
             <div className="newsImg">
                 <img src={props.article.urlToImage} />
@@ -16,6 +21,9 @@ function Section2(props){
     </div>
    )
 
+
 }
+
+
 
 export default Section2
